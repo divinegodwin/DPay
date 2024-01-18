@@ -1,9 +1,8 @@
 import React from "react";
 import Button from "../Components/Button";
-import Footer from "../Components/Footer";
 
 const Main = () => {
-  const userAmount = "N200";
+  const userAmount = "N88,000";
 
   return (
     <div>
@@ -33,7 +32,7 @@ const Main = () => {
             </div>
           </div>
 
-          <div className="flex flex-row gap-[4rem] py-2">
+          <div className="flex flex-row gap-[1rem] py-2">
             <p className="text-white text-3xl py-2 font-bold"> {userAmount}</p>
             <Button
               className="w-[120px] h-[40px] mt-2 ml-[5rem] bg-white text-black rounded-full"
