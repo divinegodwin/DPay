@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Navbar = () => {
   return (
-    <div className="h-[80px] w-full flex flex-row pt-4">
+    <div className="h-[50px] w-full flex flex-row pt-4">
       <div>
         <Image
           className="h-[60px] w-[60px] rounded-lg ml-3"
@@ -14,7 +14,7 @@ const Navbar = () => {
         ></Image>
       </div>
 
-      <div className=" ml-auto px-6 pt-3">
+      <div className=" ml-auto px-6 ">
         <div className="w-[10px] h-[10px] bg-red-700 rounded-full relative top-3 left-4">
 
         </div>
