@@ -42,10 +42,10 @@ const Main = () => {
         </div>
       </div>
 
-      <div className="transfer-section w-[95%] h-[110px]  py-4 ml-2 rounded-lg bg-white mt-3">
-        <div className="w-[50px] h-[50px] pl-3  pt-2 ml-[10rem] rounded-full bg-[#0077b6]">
+      <div className="transfer-section w-[95%] h-[100px]  py-4 ml-2 rounded-lg bg-white mt-3">
+        <div className="w-[40px] h-[40px] pl-3  pt-[9px] ml-[10rem] rounded-full bg-[#0077b6]">
           <svg
-            className="w-[30px] text-white"
+            className="w-[20px] text-white"
             data-slot="icon"
             fill="none"
             stroke-width="1.5"
@@ -65,10 +65,10 @@ const Main = () => {
         <p className="pl-[6rem] py-2 font-bold">Transfer to Dpay account</p>
       </div>
 
-      <div className="services w-[95%] h-[200px] grid grid-cols-3 gap-4 px-3 pt-6  bg-white mt-3 pl-14 ml-2 rounded-lg ">
-        <div className="w-[50px] h-[50px] pl-[10px]  pt-2  rounded-full bg-[#0077b6]">
+      <div className="services w-[95%] h-[200px] grid grid-cols-3 gap-4 px-3 pt-3  bg-white mt-2 pl-14 ml-2 rounded-lg ">
+        <div className="w-[40px] h-[40px] pl-[10px]  pt-2  rounded-full bg-[#0077b6]">
           <svg
-            className="w-[30px] h-[30px] text-white"
+            className="w-[20px] h-[20px] text-white"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             width="24"
@@ -88,9 +88,9 @@ const Main = () => {
           </div>
         </div>
 
-        <div className="w-[50px] h-[50px] pl-[10px]  pt-2  rounded-full bg-[#0077b6]">
+        <div className="w-[40px] h-[40px] pl-[11px]  pt-2  rounded-full bg-[#0077b6]">
           <svg
-            className="w-[30px] h-[30px] text-white"
+            className="w-[20px] h-[20px] text-white"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             width="24"
@@ -112,9 +112,9 @@ const Main = () => {
           </div>
         </div>
 
-        <div className="w-[50px] h-[50px] pl-[10px]  pt-2  rounded-full bg-[#0077b6]">
+        <div className="w-[40px] h-[40px] pl-[10px]  pt-2  rounded-full bg-[#0077b6]">
           <svg
-            className="text-white w-[30px]"
+            className="text-white w-[20px] h-[20px]"
             data-slot="icon"
             fill="none"
             stroke-width="1.5"
@@ -134,9 +134,9 @@ const Main = () => {
           </div>
         </div>
 
-        <div className="w-[50px] h-[50px] pl-3  pt-3  rounded-full bg-[#0077b6]">
+        <div className="w-[40px] h-[40px] pl-[10px]  pt-2  rounded-full bg-[#0077b6]">
           <svg
-            className="text-white w-[30px]"
+            className="text-white w-[20px]"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             width="24"
@@ -156,9 +156,9 @@ const Main = () => {
           </div>
         </div>
 
-        <div className="w-[50px] h-[50px] pl-3  pt-2  rounded-full bg-[#0077b6]">
+        <div className="w-[40px] h-[40px] pl-[10px]  pt-3  rounded-full bg-[#0077b6]">
           <svg
-            className="w-[30px] text-white"
+            className="w-[20px] text-white"
             data-slot="icon"
             fill="none"
             stroke-width="1.5"
@@ -174,13 +174,13 @@ const Main = () => {
             ></path>
           </svg>
           <div>
-            <p className=" absolute pt-4 left-[11rem]">Withdraw</p>
+            <p className=" absolute pt-4 left-[10rem]">Withdraw</p>
           </div>
         </div>
 
-        <div className="w-[50px] h-[50px] pl-[10px]  pt-3  rounded-full bg-[#0077b6]">
+        <div className="w-[40px] h-[40px] pl-[10px]  pt-2  rounded-full bg-[#0077b6]">
           <svg
-            className="text-white w-[30px]"
+            className="text-white w-[20px]"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             width="24"
@@ -228,7 +228,7 @@ const Main = () => {
           <p className="pl-8 ">Earn N5000 per referralr</p>
         </div>
 
-        <div className="join-and-win bg-white h-[4.3rem] mt-2 mb-12 w-[95%] ml-2 rounded-lg ">
+        <div className="join-and-win bg-white h-[4.3rem] mt-2 mb-[5rem] w-[95%] ml-2 rounded-lg ">
 
         <div className=" absolute right-3 rounded-lg ">
           <svg
