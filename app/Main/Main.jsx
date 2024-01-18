@@ -228,7 +228,7 @@ const Main = () => {
           <p className="pl-8 ">Earn N5000 per referralr</p>
         </div>
 
-        <div className="refer bg-white h-[4.3rem] mt-2 w-[95%] ml-2 rounded-lg ">
+        <div className="join-and-win bg-white h-[4.3rem] mt-2 mb-12 w-[95%] ml-2 rounded-lg ">
 
         <div className=" absolute right-3 rounded-lg ">
           <svg
@@ -250,7 +250,7 @@ const Main = () => {
           </div>
 
 
-          <header className="font-bold  pl-8 pt-3">Join & win</header>
+          <header className="font-bold   pl-8 pt-3">Join & win</header>
           <p className="pl-8 ">Join Dpay to win over to N10,000,000</p>
         </div>
       </div>
