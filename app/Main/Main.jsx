@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "../Components/Button";
-import Image from "next/image";
+import Footer from "../Components/Footer";
 
 const Main = () => {
   const userAmount = "N200";
@@ -255,6 +255,8 @@ const Main = () => {
           <p className="pl-8 ">Join Dpay to win over to N10,000,000</p>
         </div>
       </div>
+
+      
     </div>
   );
 };
