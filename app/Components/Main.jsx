@@ -85,7 +85,7 @@ const Main = () => {
             <line x1="12" x2="12.01" y1="18" y2="18" />
           </svg>
           <div>
-          <p className=" absolute left-16 pt-4 pl-[-4rem]">Airtime</p>
+            <p className=" absolute left-16 pt-4 pl-[-4rem]">Airtime</p>
           </div>
         </div>
 
@@ -109,7 +109,7 @@ const Main = () => {
             <line x1="12" x2="12.01" y1="20" y2="20" />
           </svg>
           <div>
-          <p className=" absolute pt-4 ">Data</p>
+            <p className=" absolute pt-4 ">Data</p>
           </div>
         </div>
 
@@ -131,7 +131,7 @@ const Main = () => {
             ></path>
           </svg>
           <div>
-          <p className=" absolute pt-4 right-16 ">Games</p>
+            <p className=" absolute pt-4 right-16 ">Games</p>
           </div>
         </div>
 
@@ -153,7 +153,7 @@ const Main = () => {
             <polyline points="17 2 12 7 7 2" />
           </svg>
           <div>
-          <p className=" absolute left-18 pt-4 pl-[-4rem]">TV</p>
+            <p className=" absolute left-18 pt-4 pl-[-4rem]">TV</p>
           </div>
         </div>
 
@@ -175,7 +175,7 @@ const Main = () => {
             ></path>
           </svg>
           <div>
-          <p className=" absolute pt-4 left-[11rem]">Games</p>
+            <p className=" absolute pt-4 left-[11rem]">Withdraw</p>
           </div>
         </div>
 
@@ -198,27 +198,63 @@ const Main = () => {
             <circle cx="5" cy="12" r="1" />
           </svg>
           <div>
-          <p className=" absolute pt-4 right-18 ">More</p>
+            <p className=" absolute pt-4 right-18 ">More</p>
           </div>
         </div>
       </div>
 
-          <div>
+      <div>
+        <div className="refer bg-white h-[4.3rem] mt-4 w-[95%] ml-2 rounded-lg ">
 
-            <div className="refer bg-white h-[4.3rem] mt-4 w-[95%] ml-2 rounded-lg ">
-              <header className="font-bold  pl-8 pt-3">Refer & Earn</header>
-              <p className="pl-8 ">Earn N5000 per referralr</p>
-            </div>
+          <div className=" absolute right-3 rounded-lg ">
+          <svg
+          className="w-[20px]  bg-[#f8f9fa]"
+            data-slot="icon"
+            fill="none"
+            stroke-width="1.5"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18 18 6M6 6l12 12"
+            ></path>
+          </svg>
+          </div>
 
-            <div className="refer bg-white h-[4.3rem] mt-2 w-[95%] ml-2 rounded-lg ">
-              <header className="font-bold  pl-8 pt-3">Join & win</header>
-              <p className="pl-8 ">Join Dpay to win over to N10,000,000</p>
-            </div>
+          <header className="font-bold  pl-8 pt-3">Refer & Earn</header>
+          <p className="pl-8 ">Earn N5000 per referralr</p>
+        </div>
 
+        <div className="refer bg-white h-[4.3rem] mt-2 w-[95%] ml-2 rounded-lg ">
+
+        <div className=" absolute right-3 rounded-lg ">
+          <svg
+          className="w-[20px]  bg-[#f8f9fa]"
+            data-slot="icon"
+            fill="none"
+            stroke-width="1.5"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18 18 6M6 6l12 12"
+            ></path>
+          </svg>
           </div>
 
 
-
+          <header className="font-bold  pl-8 pt-3">Join & win</header>
+          <p className="pl-8 ">Join Dpay to win over to N10,000,000</p>
+        </div>
+      </div>
     </div>
   );
 };
