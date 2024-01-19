@@ -1,13 +1,15 @@
 import React from "react";
 import Button from "../Components/Button";
+import Navbar from "../Components/Navbar";
 
 const Main = () => {
   const userAmount = "N88,000";
 
   return (
     <div>
+      <Navbar />
       <div>
-        <div className="w-[95%] ml-2 px-5 py-5 rounded-xl h-[110px] mt-[2rem] bg-[#023E8A]">
+        <div className="w-[95%] ml-2 px-2 py-5 rounded-xl h-[110px] mt-[2rem] bg-[#023E8A]">
           <div className="flex gap-3">
             <p className="text-white text-[15px]">Available Balance</p>
             <svg
