@@ -1,9 +1,23 @@
+"use client"
 import React from "react";
 import Button from "../Components/Button";
 import Navbar from "../Components/Navbar";
+import { useState } from "react";
 
 const Main = () => {
   const userAmount = "N88,000";
+
+  const [deleteBtn1IsClicked, setDeleteBtn1IsClicked] = useState(false)
+  const [deleteBtn2IsClicked, setDeleteBtn2IsClicked] = useState(false)
+  const handleDelete1 = () =>{
+     setDeleteBtn1IsClicked(true)
+      setDeleteBtn2IsClicked(false)
+  }
+  const handleDelete2 = () =>{
+    setDeleteBtn2IsClicked(true)
+     setDeleteBtn1IsClicked(false)
+ }
+
 
   return (
     <div>
@@ -207,10 +221,11 @@ const Main = () => {
       </div>
 
       <div>
-        <div className="refer bg-white h-[4.3rem] mt-4 w-[95%] ml-2 rounded-lg ">
+        <div className={ deleteBtn1IsClicked ? 'hidden' : "refer bg-white h-[4.3rem] mt-4 w-[95%] ml-2 rounded-lg "}>
 
           <div className=" absolute right-3 rounded-lg ">
           <svg
+           onClick={handleDelete1}
           className="w-[20px]  bg-[#f8f9fa]"
             data-slot="icon"
             fill="none"
@@ -229,13 +244,14 @@ const Main = () => {
           </div>
 
           <header className="font-bold  pl-8 pt-3">Refer & Earn</header>
-          <p className="pl-8 ">Earn N5000 per referralr</p>
+          <p className="pl-8 ">Earn N5000 per referral</p>
         </div>
 
-        <div className="join-and-win bg-white h-[4.3rem] mt-2 mb-[5rem] w-[95%] ml-2 rounded-lg ">
+        <div className={deleteBtn2IsClicked? 'hidden' : "join-and-win bg-white h-[4.3rem] mt-2 mb-[5rem] w-[95%] ml-2 rounded-lg "}>
 
         <div className=" absolute right-3 rounded-lg ">
           <svg
+          onClick={handleDelete2}
           className="w-[20px]  bg-[#f8f9fa]"
             data-slot="icon"
             fill="none"
