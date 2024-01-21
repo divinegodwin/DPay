@@ -19,6 +19,9 @@ const Main = () => {
      setDeleteBtn1IsClicked(false)
  }
 
+ const addMoney = () =>{
+  alert('function not available now')
+ }
 
   return (
     <div>
@@ -54,6 +57,7 @@ const Main = () => {
           <div className="flex gap-1 py-2 justify-center px-3">
             <p className="text-white text-3xl py-2 pl-1 font-bold"> {userAmount}</p>
             <Button
+            onClick={addMoney}
               className="w-[120px] h-[40px] mt-2 ml-[3rem] bg-white text-black rounded-full"
               value="add money"
             />
@@ -85,7 +89,7 @@ const Main = () => {
       </div>
 
       <div className="services w-[95%] h-[200px] grid grid-cols-3 gap-4 px-3 pt-3  bg-white mt-2 pl-14 ml-2 rounded-lg ">
-        <div className="w-[40px] h-[40px] pl-[9px]  pt-2  rounded-full bg-[#0077b6]">
+        <div className="w-[40px] h-[40px] pl-[10px]  pt-2  rounded-full bg-[#0077b6]">
           <svg
             className="w-[20px] h-[20px] text-white"
             xmlns="http://www.w3.org/2000/svg"
@@ -107,7 +111,7 @@ const Main = () => {
           </div>
         </div>
 
-        <div className="w-[40px] h-[40px] pl-[9px]  pt-2  rounded-full bg-[#0077b6]">
+        <div className="w-[40px] h-[40px] pl-[10.3px]  pt-2  rounded-full bg-[#0077b6]">
           <svg
             className="w-[20px] h-[20px] text-white"
             xmlns="http://www.w3.org/2000/svg"
@@ -127,7 +131,7 @@ const Main = () => {
             <line x1="12" x2="12.01" y1="20" y2="20" />
           </svg>
           <div>
-            <p className=" absolute pt-4 ">Data</p>
+            <p className=" absolute pt-4 text-center ">Data</p>
           </div>
         </div>
 
