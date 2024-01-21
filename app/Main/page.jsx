@@ -54,7 +54,7 @@ const Main = () => {
             </div>
           </div>
 
-          <div className="flex gap-1 py-2 justify-center px-3">
+          <div className="flex gap-14 py-2 justify-center px-3">
             <p className="text-white text-3xl py-2 pl-1 font-bold"> {userAmount}</p>
             <Button
             onClick={addMoney}

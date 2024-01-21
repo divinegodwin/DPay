@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 
 const Profile = () => {
-    const name = 'Hi Divine'
+    const name = 'Hi @User'
   return (
     <div>
              <div className="flex">

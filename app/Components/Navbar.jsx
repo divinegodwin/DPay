@@ -3,7 +3,7 @@ import Image from "next/image";
 import Profile from "./Profile";
 
 const Navbar = () => {
-  const name = 'Hi Divine'
+  
   return (
     <div className="h-[50px] w-full flex flex-row pt-4">
       <Profile />

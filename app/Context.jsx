@@ -4,7 +4,7 @@ import { createContext, useContext, useState } from "react";
 const  UserContext = createContext()
 
 export const UserProvider = ({children})=>{
-        const [userAmount, setUserAmount] = useState('N896,000')
+        const [userAmount, setUserAmount] = useState('****')
 
         const updateUserAmount = (newAmount) =>{
             setUserAmount(newAmount)
