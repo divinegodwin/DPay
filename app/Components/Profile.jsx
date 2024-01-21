@@ -11,6 +11,7 @@ const Profile = () => {
           src="/Images/react.png"
           height={30}
           width={30}
+          alt='image'
         ></Image>
         <h2 className="font-bold text-2xl pt-3 pl-3">{name}</h2>
       </div>
