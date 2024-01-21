@@ -24,7 +24,7 @@ const Main = () => {
  }
 
   return (
-    <div>
+    <div> 
       <Navbar />
       <div>
         <div className="w-[95%] ml-2  py-5  rounded-xl h-[110px] mt-[2rem] bg-[#023E8A]">
@@ -107,11 +107,11 @@ const Main = () => {
             <line x1="12" x2="12.01" y1="18" y2="18" />
           </svg>
           <div>
-            <p className=" absolute left-16 pt-4 pl-[-4rem]">Airtime</p>
+            <p className=" absolute left-14 pt-4 pl-[-4rem]">Airtime</p>
           </div>
         </div>
 
-        <div className="w-[40px] h-[40px] pl-[10.3px]  pt-2  rounded-full bg-[#0077b6]">
+        <div className="w-[40px] h-[40px] pl-[10.1px]  pt-2  rounded-full bg-[#0077b6]">
           <svg
             className="w-[20px] h-[20px] text-white"
             xmlns="http://www.w3.org/2000/svg"
@@ -131,7 +131,7 @@ const Main = () => {
             <line x1="12" x2="12.01" y1="20" y2="20" />
           </svg>
           <div>
-            <p className=" absolute pt-4 text-center ">Data</p>
+            <p className=" absolute pt-4 right-[11rem] pr-2">Data</p>
           </div>
         </div>
 
