@@ -1,7 +1,45 @@
+'use client'
 import React from "react";
 import Link from "next/link";
+import { useState } from "react";
 
 const Footer = () => {
+
+  const [homeIconIsClicked, setHomeIconIsClicked] = useState(false)
+  const [rewardIconIsClicked, setRewardIconIsClicked] = useState(false)
+  const [cardIconIsClicked, setCardIconIsClicked] = useState(false)
+  const [meIconIsClicked, setMeIconIsClicked] = useState(false)
+
+  const homeClicked = () =>{
+      setHomeIconIsClicked(true)
+      setRewardIconIsClicked(false)
+      setCardIconIsClicked(false)
+      setMeIconIsClicked(false)
+  }
+
+  const rewardClicked = () =>{
+    setRewardIconIsClicked(true)
+    setHomeIconIsClicked(false)
+      setCardIconIsClicked(false)
+      setMeIconIsClicked(false)
+}
+
+const cardClicked = () =>{
+  setCardIconIsClicked(true)
+  setHomeIconIsClicked(false)
+      setMeIconIsClicked(false)
+      setRewardIconIsClicked(false)
+}
+
+const meClicked = () =>{
+  setMeIconIsClicked(true)
+  setHomeIconIsClicked(false)
+      setRewardIconIsClicked(false)
+      setCardIconIsClicked(false)
+      
+}
+
+
   return (
     <div>
       <div className="fixed bottom-0 pt-4 bg-white w-full flex flex-row justify-center gap-16 h-[60px] ">
@@ -9,7 +47,8 @@ const Footer = () => {
         <div>
           <Link href='/Main'>
         <svg
-          className="w-[30px] text-[#023E8A] "
+         onClick={homeClicked}
+          className={homeIconIsClicked ? "w-[30px] text-[#023E8A]" : "w-[30px] text-black"}
           data-slot="icon"
           fill="none"
           stroke-width="1.5"
@@ -31,7 +70,8 @@ const Footer = () => {
       <div>
       <Link href='/Reward'>
         <svg
-          className="w-[30px]"
+        onClick={rewardClicked}
+          className={rewardIconIsClicked? "w-[30px] text-[#023E8A]" : "w-[30px] text-black"}
           data-slot="icon"
           fill="none"
           stroke-width="1.5"
@@ -53,7 +93,8 @@ const Footer = () => {
 <div>
   <Link href='/Card'>
         <svg
-          className="w-[30px]"
+         onClick={cardClicked}
+         className={cardIconIsClicked? "w-[30px] text-[#023E8A]" : "w-[30px] text-black"}
           data-slot="icon"
           fill="none"
           stroke-width="1.5"
@@ -74,7 +115,8 @@ const Footer = () => {
         <div>
           <Link href='/Me'>
         <svg
-          className="w-[30px]"
+         onClick={meClicked}
+         className={meIconIsClicked? "w-[30px] text-[#023E8A]" : "w-[30px] text-black"}
           data-slot="icon"
           fill="none"
           stroke-width="1.5"
