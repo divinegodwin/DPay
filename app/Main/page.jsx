@@ -3,10 +3,10 @@ import React from "react";
 import Button from "../Components/Button";
 import Navbar from "../Components/Navbar";
 import { useState } from "react";
-import Profile from "../Components/Profile";
+import { useUserContext } from "../Context";
 
 const Main = () => {
-  const userAmount = "N996,000";
+  const {userAmount} = useUserContext()
 
   const [deleteBtn1IsClicked, setDeleteBtn1IsClicked] = useState(false)
   const [deleteBtn2IsClicked, setDeleteBtn2IsClicked] = useState(false)
