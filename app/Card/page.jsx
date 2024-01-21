@@ -27,8 +27,8 @@ const card = () => {
 <div className='grid justify-center'>
 <header className='text-white font-bold text-xl relative top-24 right-[5rem]'>DPay</header>
 
-<div className='cardNumber absolute top-[18rem] left-24 flex justify-center'>
-<p className='text-white text-center'>  5400-4885-45543-9987</p>
+<div className='cardNumber absolute top-[18rem] left-[4rem] flex justify-center'>
+<p className='text-white text-center font-bold text-xl'>  5400-4885-45543-9987</p>
 </div>
 
 <p className='text-white  relative top-[14rem] right-[5rem]'>Virtual Card</p>

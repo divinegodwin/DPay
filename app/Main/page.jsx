@@ -3,9 +3,10 @@ import React from "react";
 import Button from "../Components/Button";
 import Navbar from "../Components/Navbar";
 import { useState } from "react";
+import Profile from "../Components/Profile";
 
 const Main = () => {
-  const userAmount = "N88,000";
+  const userAmount = "N900,000";
 
   const [deleteBtn1IsClicked, setDeleteBtn1IsClicked] = useState(false)
   const [deleteBtn2IsClicked, setDeleteBtn2IsClicked] = useState(false)

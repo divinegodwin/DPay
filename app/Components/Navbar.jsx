@@ -1,18 +1,12 @@
 import React from "react";
-
 import Image from "next/image";
+import Profile from "./Profile";
 
 const Navbar = () => {
+  const name = 'Hi Divine'
   return (
     <div className="h-[50px] w-full flex flex-row pt-4">
-      <div>
-        <Image
-          className="h-[60px] w-[60px] rounded-lg ml-3"
-          src="/Images/react.png"
-          height={30}
-          width={30}
-        ></Image>
-      </div>
+      <Profile />
 
       <div className=" ml-auto px-6 ">
         <div className="w-[10px] h-[10px] bg-red-700 rounded-full relative top-3 left-4">
