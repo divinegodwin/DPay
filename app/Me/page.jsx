@@ -2,9 +2,16 @@
 import React from "react";
 import Profile from "../Components/Profile";
 import { userAmount, useUserContext } from "../Context";
+import { useState } from "react";
 
 const Me = () => {
   const { userAmount } = useUserContext();
+
+  const [eyeIconIsClicked, setEyeIconIsClicked] = useState(false)
+
+  const showBalance = () =>{
+    setEyeIconIsClicked(!eyeIconIsClicked)
+  }
 
   return (
     <div>
@@ -39,6 +46,7 @@ const Me = () => {
           <p>Total balanace </p>
 
           <svg
+          onClick={showBalance}
             className="w-[14px] "
             data-slot="icon"
             fill="none"
@@ -57,7 +65,7 @@ const Me = () => {
         </div>
 
         <div className="ml-5 pt-4">
-          <p className="font-bold  text-2xl">{userAmount}</p>
+          <p className="font-bold  text-2xl">{ eyeIconIsClicked? 'N980,000' : userAmount}</p>
         </div>
       </div>
 
