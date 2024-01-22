@@ -3,6 +3,8 @@ import React from "react";
 import Profile from "../Components/Profile";
 import { userAmount, useUserContext } from "../Context";
 import { useState } from "react";
+import Button from "../Components/Button";
+import Link from "next/link";
 
 const Me = () => {
   const { userAmount } = useUserContext();
@@ -276,6 +278,11 @@ const Me = () => {
             </svg>
           </div>
         </div>
+      </div>
+      <div className="pb-[12rem] ml-[2rem] mt-6">
+        <Link href='/Login'>
+      <Button className='bg-[#0077b6] w-[90%] text-lg  border-black h-[60px] text-white text-center rounded-lg' value='Login' />
+      </Link>
       </div>
     </div>
   );
