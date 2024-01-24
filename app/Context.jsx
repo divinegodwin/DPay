@@ -5,15 +5,32 @@ const  UserContext = createContext()
 
 export const UserProvider = ({children})=>{
         const [userAmount, setUserAmount] = useState('****')
+        const [userName, setUsername] = useState('@user')
 
         const updateUserAmount = (newAmount) =>{
             setUserAmount(newAmount)
         }
 
+        const updateUserName = (newUsername) =>{
+            setUsername(newUsername)
+        }
+
+        const contextValue = {
+            userAmount,
+            updateUserAmount,
+            userName,
+            updateUserName,
+          };
+
         return(
-            <UserContext.Provider value = {{userAmount, updateUserAmount}}>
+            <>
+            <UserContext.Provider value={{ contextValue }}>
                 {children}
             </UserContext.Provider>
+            
+            <UserContext.Provider value={{ userName, updateUserName }}>
+                    {children}
+                </UserContext.Provider></>
         )
 }
 

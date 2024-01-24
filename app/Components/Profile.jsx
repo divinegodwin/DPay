@@ -1,8 +1,11 @@
 import React from 'react'
 import Image from 'next/image'
+import { useUserContext } from '../Context';
+import { useState } from 'react';
 
 const Profile = () => {
-    const name = 'Hi @User'
+  const {userName} = useUserContext();
+ 
   return (
     <div>
              <div className="flex">
@@ -13,7 +16,7 @@ const Profile = () => {
           width={30}
           alt='image'
         ></Image>
-        <h2 className="font-bold text-2xl pt-3 pl-3">{name}</h2>
+        <h2 className="font-bold text-2xl pt-3 pl-3">{userName}</h2>
       </div>
     </div>
   )

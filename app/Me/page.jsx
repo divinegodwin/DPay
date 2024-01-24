@@ -8,6 +8,7 @@ import Link from "next/link";
 
 const Me = () => {
   const { userAmount } = useUserContext();
+  
 
   const [eyeIconIsClicked, setEyeIconIsClicked] = useState(false)
 
