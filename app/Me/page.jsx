@@ -238,7 +238,7 @@ const Me = () => {
           </div>
         </div>
 
-        <div className=" flex pt-8 pl-3">
+        <div className=" flex pt-8 pl-5">
           <div className="flex gap-3 ">
             <svg
             className="w-[20px]"
@@ -259,7 +259,7 @@ const Me = () => {
             <p className="text-[16px] font-bold">Rate Us</p>
           </div>
 
-          <div className="pt-2 pr-3  ml-auto ">
+          <div className="pt-1 pr-2  ml-auto ">
             <svg
               className="w-[20px]"
               data-slot="icon"
