@@ -12,6 +12,7 @@ const Login = () => {
 
   const [inputUsername, setInputUsername] = useState('');
   const [password, setPassword] = useState('');
+  const[error, setError] = useState('')
   
   const handleLogin = async () =>{
     try{
@@ -19,7 +20,7 @@ const Login = () => {
     .eq('name', inputUsername )
 
     if(username){
-        alert('succes')
+      console.log('checked')
         router.push('/Main')
     }
     if(error){
@@ -28,6 +29,9 @@ const Login = () => {
     }
   }catch{
     console.log(error)
+    setError('error occured at catch statement', error)
+  }finally{
+    console.log('done')
   }
     }
     
