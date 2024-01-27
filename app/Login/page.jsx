@@ -1,11 +1,9 @@
 "use client"
 import Button from '../Components/Button';
 import Link from 'next/link';
-import { useUserContext } from '../Context';
 import { useState } from 'react';
 import supabase from '@/supabaseClient';
 import { useRouter } from 'next/navigation';
-
 
 const Login = () => {
   const router = useRouter()
@@ -16,7 +14,8 @@ const Login = () => {
   
   const handleLogin = async () =>{
     try{
-    const {data:username, error} = await supabase .from('DPay') .select('name')
+    const {data:username, error} = await supabase .from('DPay') 
+    .select('name')
     .eq('name', inputUsername )
 
     if(username){
@@ -35,7 +34,6 @@ const Login = () => {
   }
     }
     
-  
   return (
     <div>
       <form className='w-full px-10 mt-[6rem]'>
