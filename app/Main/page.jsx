@@ -7,6 +7,7 @@ import { useUserContext } from "../Context";
 
 const Main = () => {
   const {userAmount} = useUserContext()   
+ 
 
   const [eyeIconIsClicked, setEyeIconIsClicked] = useState(false)
 

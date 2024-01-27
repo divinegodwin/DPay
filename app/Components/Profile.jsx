@@ -5,7 +5,7 @@ import { useUserContext } from '../Context';
 
 
 const Profile = () => {
-  
+  const {userName} = useUserContext() 
  
   return (
     <div>
@@ -17,7 +17,7 @@ const Profile = () => {
           width={30}
           alt='image'
         ></Image>
-        <h2 className="font-bold text-2xl pt-3 pl-3"></h2>
+        <h2 className="font-bold text-2xl pt-3 pl-3">Hi, {userName}</h2>
       </div>
     </div>
   )
