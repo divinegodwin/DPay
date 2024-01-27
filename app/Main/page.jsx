@@ -6,12 +6,13 @@ import { useState } from "react";
 import { useUserContext } from "../Context";
 
 const Main = () => {
-  const {userAmount} = useUserContext()
+  const {userAmount} = useUserContext()   
 
   const [eyeIconIsClicked, setEyeIconIsClicked] = useState(false)
 
   const showBalance = () =>{
     setEyeIconIsClicked(!eyeIconIsClicked)
+    console.log(userAmount)
   }
 
   const [deleteBtn1IsClicked, setDeleteBtn1IsClicked] = useState(false)
@@ -62,12 +63,15 @@ const Main = () => {
           </div>
 
           <div className="flex gap-14 py-2 justify-center px-3">
-            <p className="text-white text-3xl py-2 pl-1 font-bold">{ eyeIconIsClicked? 'N980,000' : userAmount}</p>
+           
+           <p className="text-white text-3xl py-2 font-bold text-center">{ eyeIconIsClicked? userAmount : '****' }</p>
+            
+            <div className="pl-6 ">
             <Button
             onClick={addMoney}
-              className="w-[120px] h-[40px] mt-2 ml-[3rem] bg-white text-black rounded-full"
+              className="w-[120px] h-[40px] mt-2   bg-white text-black rounded-full"
               value="add money"
-            />
+            /></div>
           </div>
         </div>
       </div>

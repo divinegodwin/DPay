@@ -4,7 +4,7 @@ import { createContext, useContext, useState } from "react";
 const UserContext = createContext();
 
 export const UserProvider = ({ children }) => {
-  const [userAmount, setUserAmount] = useState("****");
+  const [userAmount, setUserAmount] = useState("780,000");
 
   const updateUserAmount = (newAmount) => {
     setUserAmount(newAmount);
@@ -13,7 +13,7 @@ export const UserProvider = ({ children }) => {
   const contextValue = {userAmount, updateUserAmount };
 
   return (
-    <UserContext.Provider value={{ contextValue }}>
+    <UserContext.Provider value={ contextValue }>
       {children}
     </UserContext.Provider>
   );

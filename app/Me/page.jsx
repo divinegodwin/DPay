@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Profile from "../Components/Profile";
-import { userAmount, useUserContext } from "../Context";
+import { useUserContext } from "../Context";
 import { useState } from "react";
 import Button from "../Components/Button";
 import Link from "next/link";
@@ -68,7 +68,7 @@ const Me = () => {
         </div>
 
         <div className="ml-5 pt-4">
-          <p className="font-bold  text-2xl">{ eyeIconIsClicked? 'N980,000' : userAmount}</p>
+          <p className="font-bold  text-2xl">{ eyeIconIsClicked? userAmount : "****"}</p>
         </div>
       </div>
 
