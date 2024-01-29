@@ -3,7 +3,7 @@ import Button from '../Components/Button'
 import Image from 'next/image'
 const card = () => {
 
-  let cardNumber = ''
+  let cardNumber = '2996-4456-6345-2355'
 
   return (
     <div>
@@ -16,10 +16,18 @@ const card = () => {
 
 </div>
 
-<div className='bg-none'>
+<div>
+<div className='flex justify-center mt-24'>
 
+<Image
+            src="/Images/card.jpg"
+            className="w-[340px] h-[220px] mt-2 rounded-lg"
+            width={340}
+            height={220}
+          />
 
-
+          <p className='absolute top-[18rem] text-[#fff] font-bold text-2xl'>{cardNumber}</p>
+          </div>
 </div>
 
 

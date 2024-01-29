@@ -5,7 +5,7 @@ const UserContext = createContext();
 
 export const UserProvider = ({ children }) => {
   const [userAmount, setUserAmount] = useState("N780,000");
-  const [userName, setUsername] = useState('BOSS')
+  const [userName, setUsername] = useState("BOSS");
 
   const updateUserAmount = (newAmount) => {
     setUserAmount(newAmount);
@@ -16,17 +16,14 @@ export const UserProvider = ({ children }) => {
   };
 
   const contextValue = {
-    
-      userAmount, updateUserAmount,
-      userName, updateUsername ,
-          
-    
+    userAmount,
+    updateUserAmount,
+    userName,
+    updateUsername,
   };
 
   return (
-    <UserContext.Provider value={ contextValue }>
-      {children}
-    </UserContext.Provider>
+    <UserContext.Provider value={contextValue}>{children}</UserContext.Provider>
   );
 };
 
