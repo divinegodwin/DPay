@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from '../Components/Button'
 import Image from 'next/image'
+
 const card = () => {
 
   let cardNumber = '2996-4456-6345-2355'

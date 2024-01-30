@@ -16,11 +16,38 @@ const Me = () => {
     setEyeIconIsClicked(!eyeIconIsClicked)
   }
 
+const [payIdContainerIsClicked, setpayIdContainerIsClicked] = useState(false)
+ function showIdContainer (){
+    setpayIdContainerIsClicked(true)
+ }
+
+ function closePayIdContainer (){
+  setpayIdContainerIsClicked(!payIdContainerIsClicked)
+ }
+
   return (
     <div>
+
+      
+<div className={payIdContainerIsClicked?" pay-id-container absolute top-2 left-[10px]  flex justify-center h-[660px] w-[95%] bg-[#ffff] rounded-lg" :"hidden"}>
+
+<p className="absolute text-[#023E8A] py-3 pt-16 text-2xl font-bold" >What's Pay ID?</p>
+
+<p className="absolute top-[6rem] px-3 py-12 pl-8">A Pay Id is a code each user has as an identity for transactions</p>
+              
+              <Button className='bg-[#0077b6] p-3 w-[300px] h-[50px] rounded-lg mt-[16rem] text-white ' value='Generate Pay Id' />
+              <p 
+              onClick={closePayIdContainer}
+              className="text-[#023e8A] font-bold absolute bottom-12 left-[18rem] ">close</p>
+            </div>
+
+      <div >
       <div className="bg-[#023E8A] text-white h-[200px]">
         <div className="pt-4 flex pr-2  ">
+
+          <div >
           <Profile />
+          </div>
 
           <svg
             className="w-[30px] flex ml-auto mb-2"
@@ -114,7 +141,7 @@ const Me = () => {
           </div>
         </div>
 
-        <div className=" flex pt-8 pl-5">
+        <div className=" flex pt-8 pl-5"   onClick={showIdContainer}>
           <div className="flex gap-3 ">
             <svg
               className="w-[20px]"
@@ -132,7 +159,10 @@ const Me = () => {
                 d="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Zm6-10.125a1.875 1.875 0 1 1-3.75 0 1.875 1.875 0 0 1 3.75 0Zm1.294 6.336a6.721 6.721 0 0 1-3.17.789 6.721 6.721 0 0 1-3.168-.789 3.376 3.376 0 0 1 6.338 0Z"
               ></path>
             </svg>
-            <p className="text-[16px] font-bold">Pay ID</p>
+          
+            <p
+          
+             className="text-[16px] font-bold">Pay ID</p>
           </div>
 
           <div className="pt-2 pr-3  ml-auto ">
@@ -285,6 +315,10 @@ const Me = () => {
       <Button className='bg-[#0077b6] w-[90%] text-lg  border-black h-[60px] text-white text-center rounded-lg' value='Login' />
       </Link>
       </div>
+
+      </div>
+
+
     </div>
   );
 };
