@@ -3,7 +3,7 @@ import React from 'react'
 const payid = () => {
   return (
 
-    <div>
+    <div className=''>
 
 <div>
     <h2>Whats's pay ID</h2>
