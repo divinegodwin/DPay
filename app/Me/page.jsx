@@ -318,7 +318,6 @@ const [payIdContainerIsClicked, setpayIdContainerIsClicked] = useState(false)
 
       </div>
 
-
     </div>
   );
 };
