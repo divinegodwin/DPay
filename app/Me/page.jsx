@@ -29,7 +29,7 @@ const Me = () => {
       <div
         className={
           payIdContainerIsClicked
-            ? " pay-id-container pt-[4rem] absolute top-2 left-[10px]  flex justify-center h-[620px] w-[95%] bg-white rounded-lg"
+            ? " pay-id-container pt-[4rem] absolute top-2 left-[10px]  flex justify-center h-[620px] w-[95%] bg-white rounded-"
             : "hidden"
         }
       >
