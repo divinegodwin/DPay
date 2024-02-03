@@ -17,9 +17,6 @@ const createAccount = () => {
   const [error, setError] = useState(""); //setting error state
   const { userName, updateUsername } = useUserContext(); //declaring user name context
   
-  //check if data exist
-
-
   const submitInfoToDatabase = async (e) => {
     e.preventDefault();
     if (!username || !password || !email || !number) {
