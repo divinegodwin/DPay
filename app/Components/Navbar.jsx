@@ -29,12 +29,8 @@ const Navbar = () => {
           ></path>
         </svg>
       </div>
-
       
       </div>
-
-
-  
   );
 };
 
