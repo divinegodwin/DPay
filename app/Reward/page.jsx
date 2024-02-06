@@ -4,6 +4,7 @@ import Image from 'next/image'
 
 const Reward = () => {
   const cashback = 'N200'
+  console.warn(School !== Education)
   return (
     <div>
       <div className="bg-[#0077b6] h-[200px]">
