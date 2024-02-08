@@ -8,24 +8,19 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'DPay',
-  description: 'Enjoy...',
+  description: 'Testing...',
 }
 
 export default function RootLayout({ children }) {
   return (
-
     <html lang="en">
-
-
 
       <body className={inter.className}>
         <UserProvider>
           {children}
-
-          <Footer />
+    <Footer />
         </UserProvider>
       </body>
-
 
     </html>
 
